@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Fuel Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trip Fuel Cost Calculator</h1>
+        <div class="input-group">
+            <label for="fuelPrice">Fuel Price per Gallon ($):</label>
+            <input type="number" id="fuelPrice" step="0.01" required>
+        </div>
+        <div class="input-group">
+            <label for="fuelEconomy">Fuel Economy (miles per gallon):</label>
+            <input type="number" id="fuelEconomy" step="0.01" required>
+        </div>
+        <div class="input-group">
+            <label for="distance">Distance of Trip (miles):</label>
+            <input type="number" id="distance" step="0.01" required>
+        </div>
+        <button onclick="calculateTripCost()">Calculate</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
